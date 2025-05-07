@@ -1,7 +1,8 @@
-<!-- file: docs/CONTEXT/magic_words.md | purpose: Detailed natural-language command triggers -->
-# Natural-Language Command Triggers
+<!-- file: docs/CONTEXT/magic_words.md | purpose: Detailed magic-word triggers and actions -->
+# Magic Word Triggers
 
-The assistant recognizes the following exact user messages (case-insensitive) as "magic words" to run scripts. When triggered, it emits a `functions.shell` call and returns the command output.
+Use messages starting with the prefix "magicWord:" (case-insensitive) to invoke scripts. After the prefix, specify one of the available commands below. The assistant will emit a `functions.shell` call for the matching command and return its output.
+
 
 ## randomSave
 
@@ -10,6 +11,7 @@ Invoke:
 { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/random_save.sh"], "timeout": 120000 } }
 ```
 
+
 ## randomLoad
 
 Invoke:
@@ -17,20 +19,13 @@ Invoke:
 { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/random_load.sh"], "timeout": 120000 } }
 ```
 
+
 ## cloudSave
 
 Invoke:
 ```json
 { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/ci_save.sh"], "timeout": 120000 } }
 ```
-  
-## runSentris
-
-Invoke:
-```json
-{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/run_sentris.sh"], "timeout": 120000 } }
-```
-**Note:** This will send the Flutter run commands to the tmux window named `snt` in the `sentris` session, so you can view logs there.
 
 
 ## publicSave
@@ -40,14 +35,25 @@ Invoke:
 { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/publish_public.sh"], "timeout": 120000 } }
 ```
 
+
+## runSentris
+
+Invoke:
+```json
+{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/run_sentris.sh"], "timeout": 120000 } }
+```
+This will send the Flutter run commands to the tmux window named `snt` in the `sentris` session, so we can view logs there.
+
+
 ## restartBackend
 
 Invoke:
 ```json
 { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/restart_backend.sh"], "timeout": 120000 } }
 ```
-**Note:** This will send Ctrl+C to the `bnd` tmux window in the `sentris` session and issue a `sudo systemctl restart sentris-backend` on the VM.
-  
+This will send Ctrl+C to the `bnd` tmux window in the `sentris` session and issue a `sudo systemctl restart sentris-backend` on the VM.
+
+
 ## purgeUser
 
 Invoke:
@@ -55,7 +61,8 @@ Invoke:
 { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/purge_user.sh"], "timeout": 120000 } }
 ```
 This script will prompt for an email address and then purge that user and all related data on the backend VM.
-   
+
+
 ## pushInfo
 
 Invoke:
