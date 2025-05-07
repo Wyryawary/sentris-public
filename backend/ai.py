@@ -1,4 +1,4 @@
-# <!-- file: ai.py | purpose: AI endpoints | scope: ai | updated: 2025-04-21 -->
+# <!-- file: ai.py | purpose: AI endpoints -->
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi import APIRouter
