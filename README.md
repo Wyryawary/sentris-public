@@ -7,14 +7,9 @@
 * `.codex.md`  
   Developer workflows and tmux/Codex CLI integration guide.
 
-* `docs/CONTEXT/`  
-  Design and context documentation, including:
-  - `current_goal.md`
-  - `current_setup.md`
-  - `gameplay_mechanics.md`
-  - `glossary.md`
+* `docs/CONTEXT/Shared/`  
+  Magic word trigger definitions:
   - `magic_words.md`
-  - `repo_details.md`
 
 * `backend/ai.py`  
   FastAPI AI endpoints implementation using Python.

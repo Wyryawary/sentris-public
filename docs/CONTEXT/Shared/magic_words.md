@@ -1,4 +1,4 @@
-<!-- file: docs/CONTEXT/magic_words.md | purpose: Detailed magic-word triggers and actions -->
+<!-- file: docs/CONTEXT/Shared/magic_words.md | purpose: Detailed magic-word triggers and actions -->
 # Magic Word Triggers
 
 Use messages starting with the prefix "magicWord:" (case-insensitive) to invoke scripts. After the prefix, specify one of the available commands below. The assistant will emit a `functions.shell` call for the matching command and return its output.
