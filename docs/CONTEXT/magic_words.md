@@ -22,10 +22,17 @@ Invoke:
 
 ## cloudSave
 
-Invoke:
+Invoke (optionally with a human-readable save name):
 ```json
-{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/ci_save.sh"], "timeout": 120000 } }
+{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/ci_save.sh \"<save name>\""], "timeout": 120000 } }
 ```
+## cloudLoad
+
+Invoke (with the target save name):
+```json
+{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/cloud_load.sh \"<save name>\""], "timeout": 120000 } }
+```
+This will reset your working tree to the named cloud save (tag) matching `<save name>`.
 
 
 ## publicSave

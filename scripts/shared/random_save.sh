@@ -16,8 +16,11 @@ git commit --allow-empty -m "$msg"
 commit_hash=$(git rev-parse HEAD)
 timestamp=$(date --iso-8601=seconds)
 
-# Record pointer and log entry
+# Record pointer for randomLoad
 echo "$commit_hash" > .last_randomsave
-echo "$timestamp  👉 codex_actions.log: randomSave snapshot - \"$msg\"" >> codex_actions.log
+
+# Record save in docs/saves.log
+timestamp_human=$(date '+%Y-%m-%d @ %H:%M')
+echo "$timestamp_human - rand_save" >> docs/CONTEXT/saves.log
 
 echo "Random save completed: commit $commit_hash"

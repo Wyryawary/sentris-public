@@ -1,0 +1,10 @@
+<!-- file: docs/CONTEXT/saves.log | purpose: tracks all save and load events -->
+
+# Format: YYYY-MM-DD @ HH:MM - <action>
+
+2025-05-10 @ 12:34 - ci_save: "test-patch"
+2025-05-10 @ 12:36 - rand_save
+2025-05-10 @ 12:39 - rand_load
+2025-05-10 @ 12:41 - ci_load: "load-test"
+2025-05-10 @ 12:56 - ci_load: "try the online save again"
+2025-05-10 @ 13:07 - rand_load
