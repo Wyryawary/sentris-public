@@ -1,4 +1,4 @@
-<!-- file: docs/CONTEXT/Shared/magic_words.md | purpose: Detailed magic-word triggers and actions -->
+<!-- file: docs/CONTEXT/magic_words.md | purpose: Detailed magic-word triggers and actions -->
 # Magic Word Triggers
 
 Use messages starting with the prefix "magicWord:" (case-insensitive) to invoke scripts. After the prefix, specify one of the available commands below. The assistant will emit a `functions.shell` call for the matching command and return its output.
@@ -8,7 +8,7 @@ Use messages starting with the prefix "magicWord:" (case-insensitive) to invoke 
 
 Invoke:
 ```json
-{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/random_save.sh"], "timeout": 120000 } }
+    { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/random_save.sh"], "timeout": 120000 } }
 ```
 
 
@@ -16,7 +16,7 @@ Invoke:
 
 Invoke:
 ```json
-{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/random_load.sh"], "timeout": 120000 } }
+    { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/random_load.sh"], "timeout": 120000 } }
 ```
 
 
@@ -24,13 +24,13 @@ Invoke:
 
 Invoke (optionally with a human-readable save name):
 ```json
-{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/ci_save.sh \"<save name>\""], "timeout": 120000 } }
+    { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/ci_save.sh \"<save name>\""], "timeout": 120000 } }
 ```
 ## cloudLoad
 
 Invoke (with the target save name):
 ```json
-{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/cloud_load.sh \"<save name>\""], "timeout": 120000 } }
+    { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/cloud_load.sh \"<save name>\""], "timeout": 120000 } }
 ```
 This will reset your working tree to the named cloud save (tag) matching `<save name>`.
 
@@ -39,7 +39,7 @@ This will reset your working tree to the named cloud save (tag) matching `<save 
 
 Invoke:
 ```json
-{ "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/shared/publish_public.sh"], "timeout": 120000 } }
+    { "name": "functions.shell", "arguments": { "command": ["bash", "-lc", "./scripts/publish_public.sh"], "timeout": 120000 } }
 ```
 
 

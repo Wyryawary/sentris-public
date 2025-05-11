@@ -4,8 +4,8 @@ set -euo pipefail
 
 # Determine paths
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
-INCLUDE_FILE="$REPO_ROOT/public_includes.txt"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+INCLUDE_FILE="$REPO_ROOT/docs/public_includes.txt"
 REMOTE="public"
 BRANCH="public"
 TIMESTAMP=$(date -u +'%Y-%m-%dT%H:%M:%SZ')

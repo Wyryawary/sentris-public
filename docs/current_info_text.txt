@@ -1,0 +1,59 @@
+
+_Sentris has been developed independently, funded by the creator, so far... Please consider chipping in to pay for the OpenAI API usage to encourage further development:_
+
+[Support Sentris on Patreon](https://www.patreon.com/SSentris)
+or
+[Support Sentris on GoFundMe](https://gofund.me/e0ac42da)
+or
+[Support Sentris on Libera Pay](https://liberapay.com/SavageD/)
+
+
+**     Welcome to SENTRIS!**
+
+SENTRIS is a unique AI-powered brain training language puzzle that challenges you to construct meaningful and grammatically correct sentences. With the experimental Custom Topics feature, you can personalize your experience by generating content tailored to your liking.
+
+Ready to put your linguistic skills to the test? Select PLAY from the Main Menu and _Have fun_!
+
+
+**     Game Controls**
+
+***Move & Drop Blocks:*** Use the Arrow or WASD keys to move blocks left or right, swap their content, or drop them into place.
+
+***Replace any Block:*** Highlight any block on the board to replace it with the currently active block. Blocks in locked sentences can only be replaced during “Bonus Rounds”.
+
+***Pause & Resume:*** Press ESC or tap the X button at the bottom of the screen to pause your game.
+
+***Customize Your Experience:*** Head to the SETTINGS menu to tailor the game to your preferences, including:
+
+- Adjust the number of Blocks Per Row
+- Set the starting game speed
+- Choose your color theme and fonts
+
+***Compete for High Scores:*** Check out the TOP RANKS menu to view the leaderboards and see how your scores stack up against other players!
+
+
+**     Help to Improve SENTRIS!**
+
+Sentris is in its early stages, and every play session helps the AI backend to evolve and improve. Data generated (e.g. the custom topics you define, the valid sentences you create, the flagged invalid sentences that you comment on) will be used to customize the AI powering Sentris contributing to a more enhanced experience.
+
+Your feedback is invaluable!
+
+***Tap the message panel*** at the top to share your thoughts, report issues, or suggest new features. Over time, we can make Sentris even better! (Currently broken feature; fix coming soon)
+
+
+**     Mission & Commitment to Sustainability**
+
+AI technology requires significant _computational power_, contributing to ***carbon emissions***. The maker of Sentris recognizes the responsibility to ensure that AI serves as a force for sustainability, rather than exacerbating the climate crisis.
+
+The commitment goes beyond "just offsetting" carbon emissions - the aim is to create a _carbon-negative impact_ over time. The majority of any future revenue from SENTRIS is going to be directed toward activities and projects that support sustainability.
+
+By playing SENTRIS, you are not just engaging with an innovative language puzzle - you are helping shape a more sustainable future for technology.
+
+Please encourage other businesses and policymakers to take similar steps toward carbon-negative solutions. By doing so, together we can ensure that the remarkable culture and technologies we create today remain accessible for generations to come.
+
+***Please consider helping to fund the mission:*** 
+[Support a more sustainable Sentris on Patreon](https://www.patreon.com/SSentris) or
+[GoFundMe](https://gofund.me/e0ac42da) or
+[Libera Pay](https://liberapay.com/SavageD/)
+
+

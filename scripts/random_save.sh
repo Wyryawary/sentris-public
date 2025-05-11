@@ -17,7 +17,7 @@ commit_hash=$(git rev-parse HEAD)
 timestamp=$(date --iso-8601=seconds)
 
 # Record pointer for randomLoad
-echo "$commit_hash" > .last_randomsave
+echo "$commit_hash" > docs/.last_randomsave
 
 # Record save in docs/saves.log
 timestamp_human=$(date '+%Y-%m-%d @ %H:%M')

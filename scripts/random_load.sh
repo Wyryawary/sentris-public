@@ -4,13 +4,13 @@
 set -euo pipefail
 
 # Ensure a pointer file exists
-if [ ! -f .last_randomsave ]; then
-  echo "Error: .last_randomsave not found. Please run scripts/random_save.sh first." >&2
+if [ ! -f docs/.last_randomsave ]; then
+  echo "Error: docs/.last_randomsave not found. Please run scripts/random_save.sh first." >&2
   exit 1
 fi
 
 # Read the snapshot commit hash
-commit=$(cat .last_randomsave)
+commit=$(cat docs/.last_randomsave)
 echo "Restoring repository to random save commit $commit"
 
 # Hard reset to that snapshot
